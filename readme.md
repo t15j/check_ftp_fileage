@@ -1,14 +1,15 @@
 Einfacher Nagios Check auf Perl-Basis zur Prüfung einer Datei auf dem FTP-Server, ob sie ein bestimmtes Alter unterschreitet.
 
-   -H ftp-Server
-   -u Username
-   -p Passwort
-   -d Directory (default '.')
-   -f Dateiname
-   -w Warning-Schwelle
-   -c Critical-Schwelle
+## Parameter
+   -H ftp-Server<br/>
+   -u Username (default 'anonymous')<br/>
+   -p Passwort (default 'Hostname')<br/>
+   -d Directory (default '.')<br/>
+   -f Dateiname<br/>
+   -w Warning-Schwelle<br/>
+   -c Critical-Schwelle<br/>
 
-Einbindung:
+## Einbindung:
 ```
 define command{
         command_name    check_ftp_fileage
