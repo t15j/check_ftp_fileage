@@ -13,6 +13,6 @@ Einfacher Nagios Check auf Perl-Basis zur Prüfung einer Datei auf dem FTP-Serve
 ```
 define command{
         command_name    check_ftp_fileage
-        command_line    <PFAD>/check_ftp_fileage -H $HOSTNAME$ -u $ARG1$ -p $ARG2$ -f $ARG3$ -w $ARG4$ -c $ARG5$
+        command_line    <PFAD>/check_ftp_fileage -H $HOSTNAME$ -u $ARG1$ -p $ARG2$ -d $ARG3$ -f $ARG4$ -w $ARG5$ -c $ARG6$
         }
 ```
